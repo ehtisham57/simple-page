@@ -1,0 +1,854 @@
+
+<?php
+include('db.php');
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap-extension.css">
+<link rel="stylesheet" href="css/bootstrap-extension.min.css">
+<link rel="stylesheet" href="stylle1.css">
+<style>
+@charset "utf-8";
+/* CSS Document */
+
+	*{
+		padding:0;
+		margin:0;
+		box-sizing:border-box;
+		font-family: 'Nunito', sans-serif;
+	}
+		
+	
+		
+		
+		
+/******navbar********/		
+	.bnnr{
+		background-image:url(images/bnnr.jpg);
+		height:600px;
+		width:100%;
+		background-size:cover;
+		background-position:center;
+		
+		
+	}
+	.navbar ul li a{
+		margin:0px 20px;
+		color:#fff!important;
+		font-weight:bold;
+		
+		
+		
+		}
+		
+		
+.navbar-toggler{
+background:#fff!important;
+		}
+		
+		
+		
+		
+	.blck_lyr{
+		background-color:rgba(0,0,0,0.7);
+		height:600px;
+		width:100%;
+		
+	}
+		
+		
+		
+		/****hero header*********/
+		
+		
+	.hero{
+		padding-top:10%;
+		width:100%;
+		height:80vh;
+		background:#273c75;
+		
+		
+		
+		}	
+		
+		
+
+		
+		
+	.hero .rightside a{
+		padding:7px 30px;
+		border:1px solid transparent;
+		color:#fff;
+		background:#487eb0;
+		border-radius:10px; 
+		margin:0px 5px;
+		text-decoration:none;
+		
+		} 
+		
+		
+		span{
+			color:#e84118;
+			}
+			
+			
+			
+			
+			/********service********/
+			
+			
+			
+			
+			.services{
+				padding-top:150px;
+				
+				}
+		
+		
+		
+		.serho:hover{
+			transform:translateY(-30px);
+			transition:0.4s ease;
+			box-shadow:10px 10px 10px 5px rgba(0,0,0,0.2);
+			
+			
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			 
+			
+			
+			
+			
+			/**********bs cards***********/
+			
+			.bs-cards{
+				
+				
+				margin-top:160px;
+				position:relative;
+				/*
+				width:100%;
+				height:100vh;*/}
+			
+			
+			.bs-cards::before{
+				content:"";
+					position:absolute;
+					top:0%;
+					left:0%;
+					right:0%;
+					bottom:0%;
+		
+					 background:linear-gradient(160deg ,#3055b9  60%, #fff 0%);
+					  z-index:-1;
+
+				}
+		
+		
+				.bs-cards h1{
+			margin-top:20px;
+			
+			padding-top:40px;
+			margin-bottom:30px;
+		
+			font-size:50px;
+			color: #fff;
+			
+			}
+	
+			
+
+
+
+
+
+
+
+
+			.card{
+				padding:0px;
+				margin:0px 10px;
+								box-shadow:5px 5px 20px 5px rgba(0,0,0,0.3);
+								outline:#000;
+								border-radius:10px;
+							
+
+			
+				}
+				
+				
+				.card-header{
+					padding:20px;
+					color:#4a69bd;
+					font-size:30px;
+				
+				
+					
+					}
+			
+			.card-body{
+				padding:20px 0px 30px 0px;
+				
+				
+				}
+				
+				
+				
+				.card-body span{
+					font-size:40px;
+					color:#4a69bd;
+					
+					}
+				
+				.card-footer{
+					
+					padding:30px!important;
+				
+					}
+		
+		.card-footer a{
+			padding:15px 35px;
+			border:1px solid #fff;
+			border-radius:10px;
+			background:#3055b9;
+			color:#fff;
+			text-decoration:none;
+			}
+		
+		
+		
+		.card-body li{
+			
+			list-style-type:none;
+			margin:15px 0px;}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			/************contactus*************/
+			
+			.contactus{
+				margin-top:200px;
+				position:relative;
+				margin-bottom:100px;
+		
+				
+				}
+				
+				
+				/*
+				
+				
+				.contactus::after{
+					content:"";
+					position:absolute;
+					top:0%;
+					left:0%;
+					right:0%;
+					bottom:0%;
+					 background:linear-gradient(335deg , #1e3799 58%, #fff 0%);
+					  z-index:-1;
+					
+					}
+				
+				
+				
+				
+				.checkbox{
+					color:#000;
+					
+					}*/
+				/*************greyscale***************/
+
+				.greyscalediv img{
+
+
+					filter: grayscale(100%);
+				}
+	
+
+				.greyscalediv img:hover{
+
+
+					filter: grayscale(0%);
+				}
+	.icons .fab{
+
+		margin:0px 10px;
+	}
+
+	li{
+		list-style-type: none;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*******footer***********/
+	
+	footer{ 
+	margin-top:100px;
+	background:#273c75;
+	padding:80px;
+	}
+	
+	footer li{
+
+		margin: 5px 0px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+/***********media queries************/		
+	@media (max-width: 575.98px) {
+		
+	/******navbar********/	
+		
+.navbar ul li a {
+			
+		padding-top:10px!important;
+			
+			}
+		
+		
+		.navbar-toggler{
+			
+			font-size:1 rem;}
+			
+			
+			
+		
+	.form-inline{
+		    padding-top: 35px;
+			margin-right:20px;
+		}
+		/********hero header*********/
+		
+		.hero .rightside h1{
+			    font-size: 35px;}
+
+
+			
+			
+			
+			
+				/*******aboutus*********/		
+			
+			.aboutus .lft{
+				
+				
+				margin-top:50px;
+				
+				
+				}
+				
+				
+				
+				
+				
+				
+			/********service********/
+			
+			
+			
+			
+			.services{
+				padding-top:120px;
+
+	
+				}
+		
+		
+		
+		.services h1{
+			
+			margin-bottom:100px;
+			}
+				
+				
+			
+			
+			.serho{
+				
+				margin-top:25px;
+				}
+				
+				
+				
+				
+				
+				
+				/****cards********/
+				.card{
+					margin-top:50px;
+					margin-bottom:50px;
+					
+					}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.card-footer{
+				padding:30px!important;
+				}
+			
+				
+			
+				
+			/************contactus*************/
+	
+			
+				
+				
+				
+			
+				
+				
+				
+				
+			
+			
+			
+			/******footer**********/
+			
+			footer .f1{
+				
+				padding:0%;
+				margin-top:50px;
+				}
+				
+				
+				footer  .icons{
+				font-size:12px!important;	
+				margin:0%;
+				display:inline-block;
+					
+					}
+	
+	
+	.icons .fab {
+     margin: 0px 5px;
+	}
+		
+	}
+		
+	/******************/	
+		@media (max-width: 767.98px) { 
+		
+		/******navbar********/	
+		.navbar ul li a {
+			
+			padding-top:25px!important;
+				
+				}
+
+	
+		/********hero header*********/	
+		.hero{
+			height:70vh;}
+		
+		
+		
+					
+			
+		
+	.form-inline{
+		    padding-top: 25px!important;
+			margin-left:10px!important;
+		}
+		
+		.hero .left-side img{
+			display: none;
+}
+			}
+			
+			
+			
+			
+			
+			
+				/*******aboutus*********/		
+			
+			
+			
+				
+			.aboutus .lft{
+				
+				
+				margin-top:60px;
+				
+				
+				}
+				
+				
+				
+				
+				
+				
+					
+			/********service********/
+			
+			
+			
+			
+			.services{
+				padding-top:140px;
+				
+				}
+				
+				
+				
+			.serho{
+				margin-bottom:40px;
+				
+				
+				}
+				
+				
+				
+					
+				/****cards********/
+				.card{
+					margin-top:50px;
+					margin-bottom:50px;
+					
+					}
+			
+				
+	
+			
+				
+					
+					
+									
+			.bs-cards::after{
+				content:none;
+				
+	
+
+				}
+					
+					
+					
+			.card-footer{
+				padding:30px!important;
+				}
+					
+					
+					
+					
+			/************contactus*************/
+			
+	
+
+
+
+
+
+		
+
+
+			/******footer**********/
+			
+			footer .f1{
+				
+				padding:0%;
+				margin-top:50px;
+				}
+					
+					
+			
+		
+		 
+		 
+		 
+		 
+		 
+		 @media (max-width: 991.98px) {
+			 
+			 /******navbar********/	
+			 .navbar ul li a {
+			
+				padding-top:40px!important;
+					
+					}
+			
+	
+		/********hero header*********/
+	.hero {
+		height:70vh;
+		
+		}
+		
+		
+		
+		
+					
+			
+		
+	.form-inline{
+		    padding-top: 35px;
+			margin-right:40px;
+		}
+			 
+			 
+			 
+			 
+	/*******aboutus*********/		 
+			 
+			 
+			 
+			 
+			 .aboutus .lft img{
+				 height:500px;
+				 
+				 }
+			 
+			 /***********services*******/
+			 
+			 	
+			.serho{
+				
+				margin-top:25px;
+			
+				}
+
+			/*******cards********/
+						
+			.card-footer{
+				padding:30px!important;
+				}
+					
+			 .card-body{
+				 padding:7px!important;
+				 }
+				 
+				  .card-body li{ margin:15px 0px!important;}
+			 
+			
+			  /**********contactus********/
+			  
+			
+			/************contactus*************/
+		
+			
+			}
+</style>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link type="text/css" rel="stylesheet" href="style/style.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<body style="background-color:rgba(204,204,204,1)">
+
+
+<!------navbar------->
+
+
+<section>
+<div class="bnnr">
+<div class="blck_lyr">
+
+
+<div class="nav-bar">
+
+
+<nav class="navbar navbar-expand-lg navbar-light p-3 container">
+  <a class="navbar-brand" href="#" style="color:#fff !important; font-size:30px">LOGO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" style="padding-right:100px">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      
+        
+      <li class="nav-item">
+        <a class="nav-link" href="#">About </a>
+      </li>
+  
+        <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+  
+        <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+  
+  
+  
+  
+  
+    </ul>
+    
+ </div>
+ </nav>
+ </div>
+ <center>
+ <div class="row">
+ <div class="col-md-12">
+ <h1 class="mt-7" style="color:rgba(204,204,204,1)"><b>GreyScales</b></h1>
+ <p style="color:rgba(204,204,204,1)">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</p>
+ </center>
+ </div>
+ </div>
+ </div>
+
+</div>
+
+
+</section>
+<br>
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<img src="images/bg-masthead.jpg">
+
+</div>
+<div class="col-md-4">
+
+<center>
+<br>
+<br>
+<br>
+<br>
+<h3><b>Shoreline</b></h3>
+<br>
+<br>
+<p><b>Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</b></p>
+</div>
+</center>
+</div>
+</section>
+<br>
+<br>
+  <section>
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-lg-6">
+  <img class="img-fluid" src="images/ar1.jpg">
+  </div>
+  <div class="col-lg-6">
+  <img class="img-fluid" src="images/misty.JPG">
+  
+  </div>
+  
+  </div>
+  </div>
+  
+  
+  </section>
+  <section>
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-lg-6">
+  <img class="img-fluid" src="images/pajama.JPG">
+  </div>
+  <div class="col-lg-6">
+  <img class="img-fluid" src="images/demo-image-02.jpg">
+  
+  </div>
+  
+  </div>
+  </div>
+  
+  
+  </section>
+ </body>
+ </html>
